@@ -3,12 +3,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import Cards from "./components/Cards/Cards";
 import Filters from "./components/Filters/Filters";
+import Pagination from "./components/Pagination/Pagination";
+import Search from "./components/Search/Search";
 function App() {
   let [pageNumbers, setPageNumbers] = useState(1);
+  let [search, setSearch] = useState("");
   let [fetchedData, updateFetchedData] = useState([]);
   let { info, results } = fetchedData;
-
-  let api = `https://rickandmortyapi.com/api/character/?page=${pageNumbers}`;
+  let api = `https://rickandmortyapi.com/api/character/?page=${pageNumbers}&name=${search}`;
   useEffect(() => {
     (async function () {
       let data = await fetch(api).then((res) => res.json());
@@ -20,6 +22,7 @@ function App() {
       <h1 className="text-center ubuntu my-4">
         Rick & Morty <span className="text-primary">Wiki</span>
       </h1>
+      <Search setPageNumbers={setPageNumbers} setSearch={setSearch} />
       <div className="container">
         <div className="row">
           <div className="col-3">
@@ -32,6 +35,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Pagination pageNumbers={pageNumbers} setPageNumbers={setPageNumbers} />
     </div>
   );
 }
