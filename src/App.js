@@ -35,7 +35,11 @@ function App() {
           </div>
         </div>
       </div>
-      <Pagination pageNumbers={pageNumbers} setPageNumbers={setPageNumbers} />
+      <Pagination
+        info={info}
+        pageNumbers={pageNumbers}
+        setPageNumbers={setPageNumbers}
+      />
     </div>
   );
 }
