@@ -4,7 +4,8 @@
 
 ### Packages installation steps
 
-`npx create-react-app .
+```
+npx create-react-app .
 
 npm install bootstrap
 
@@ -14,8 +15,12 @@ npm install sass
 
 npm install react-paginate --save
 
-npm install react-router-dom@6.0.2`
+npm install react-router-dom@6.0.2
+
+```
 
 ### Font Awesome CDN
 
-`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />`
+```
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+```
