@@ -4,10 +4,21 @@ import Species from "./Category/Species";
 import Status from "./Category/Status";
 
 const Filters = ({ setSpecies, setStatus, setPageNumbers, setGender }) => {
+  let clear = () => {
+    setSpecies("");
+    setStatus("");
+    setPageNumbers("");
+    setGender("");
+    window.location.reload(false);
+
+    /* .reload(false) it mean it just reload the catch file not entire page from the server.
+    if you use reload(true) then it reload the entire page from the server . */
+  };
   return (
     <div className="col-3">
-      <div className="text-center fw-bold fs-4 mb-4">Filter</div>
+      <div className="text-center fw-bold fs-2 mb-4">Filter</div>
       <div
+        onClick={clear}
         style={{ cursor: "pointer" }}
         className="text-center text-decoration-underline text-primary mb-4"
       >
