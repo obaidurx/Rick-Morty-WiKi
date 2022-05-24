@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Search.modules.scss";
 const Search = ({ setSearch, setPageNumbers }) => {
   return (
-    <form className="d-flex justify-content-center gap-4 mb-5">
+    <form className="d-flex flex-sm-row flex-column align-items-center justify-content-center gap-4 mb-5">
       <input
         onChange={(e) => {
           setPageNumbers(1);

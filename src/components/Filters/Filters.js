@@ -15,7 +15,7 @@ const Filters = ({ setSpecies, setStatus, setPageNumbers, setGender }) => {
     if you use reload(true) then it reload the entire page from the server . */
   };
   return (
-    <div className="col-3">
+    <div className="col-lg-3 col-12 mb-5">
       <div className="text-center fw-bold fs-2 mb-4">Filter</div>
       <div
         onClick={clear}
