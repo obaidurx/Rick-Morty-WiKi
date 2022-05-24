@@ -33,7 +33,9 @@ npm install react-router-dom@6.0.2
 
 ###### Many thanks
 
-> **Obaidur Rahman Humayun** >[Github](https://github.com/obaidurx)
-> [Linkedin](https://www.linkedin.com/in/obaidurx/)
-> [Twitter](https://twitter.com/obaidurx)
+> **Obaidur Rahman Humayun**
+
+> [Github](https://github.com/obaidurx) ||
+> [Linkedin](https://www.linkedin.com/in/obaidurx/) ||
+> [Twitter](https://twitter.com/obaidurx) ||
 > [Facebook](https://facebook.com/orh.bd)
